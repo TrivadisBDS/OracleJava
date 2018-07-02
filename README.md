@@ -14,13 +14,13 @@ Since the image is used as base image for Oracle Unified Directory it will also 
     * *unzip* A utility for unpacking zip files
  
 ## Java 8
-[Download Server JRE 8](http://www.oracle.com/technetwork/java/javase/downloads/server-jre8-downloads-2133154.html) `.tar.gz` file and drop it inside folder `java-8`. If you download Java 1.8 with the latest update from MOS (see Doc ID [1439822.1](https://support.oracle.com/epmos/faces/DocumentDisplay?id=1439822.1)), make sure to first unzip the `p<PATCHID>_180<UPDATE>_Linux-x86-64.zip` file. This Dockerfile expects the Java package in the form `server-jre-8u<UPDATE>-linux-x64.tar.gz`.
+Download Server JRE 8 [My Oracle Support](https://updates.oracle.com/ARULink/PatchDetails/process_form?patch_num=27412890) file and drop it inside folder `java-8`. If you download Java 1.8 with the latest update from MOS (see Doc ID [1439822.1](https://support.oracle.com/epmos/faces/DocumentDisplay?id=1439822.1)), make sure to not unzip the `p<PATCHID>_180<UPDATE>_Linux-x86-64.zip` file. This Dockerfile expects the Java package in the form `p27412890_180172_Linux-x86-64.zip`.
 
 Build it:
 
 ```
 $ cd java-8
-$ docker build -t trivadisbds/oraclejava:8 .
+$ docker build -t trivadisbds/serverjre:8 .
 ```
 
 ## Issues
