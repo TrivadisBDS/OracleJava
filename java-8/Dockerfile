@@ -8,8 +8,7 @@
 # Date.......: 2018.03.19
 # Revision...: 1.0
 # Purpose....: This Dockerfile is to build Oracle Java 1.8
-# Notes......: This Dockerfile is based on Oracle's Dockerfile for 
-#              Java 1.8.
+# Notes......: orarepo host has to be specified via argument
 #              Build this image : docker build -t oracle/serverjre:8 .
 # Reference..: https://github.com/oracle/docker-images/tree/master/OracleJava
 # License....: Licensed under the Universal Permissive License v 1.0 as 
