@@ -20,7 +20,7 @@ Build it:
 
 ```
 $ cd java-8
-$ docker build -t trivadisbds/serverjre:8 .
+$ docker build -t trivadisbds/oraclejava:8 .
 ```
 
 ## Issues
