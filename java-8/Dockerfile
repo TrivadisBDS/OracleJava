@@ -43,8 +43,8 @@ ENV DOWNLOAD="/tmp/download" \
 RUN echo "%_install_langs   en" >/etc/rpm/macros.lang && \
     yum install -y libaio gzip zip unzip tar && \
     rm -rf /var/cache/yum && \
-    mkdir -p ${DOWNLOAD} && \
     mkdir -p ${JAVA_BASE} && \
+    mkdir -p ${DOWNLOAD} && \
     cd ${DOWNLOAD} && \
     [ -s "${DOWNLOAD}/${JAVA_MOS_PKG}" ] || \
     curl -f http://${ORAREPO}/${JAVA_MOS_PKG} -o ${DOWNLOAD}/${JAVA_MOS_PKG} && \
