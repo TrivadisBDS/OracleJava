@@ -33,7 +33,7 @@ ARG ORAREPO
 # ----------------------------------------------------------------------
 ENV DOWNLOAD="/tmp/download" \
     ORAREPO=${ORAREPO:-"docker.oradba.ch"} \
-    JAVA_MOS_PKG="p27412890_180172_Linux-x86-64.zip" \
+    JAVA_MOS_PKG="p27890736_180181_Linux-x86-64.zip" \
     JAVA_PKG=server-jre-8u*-linux-x64.tar.gz \
     JAVA_HOME="/usr/java/default" \
     JAVA_BASE="/usr/java"
